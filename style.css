@@ -1,0 +1,435 @@
+  *{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: font;
+    color: #007e8a;
+}
+
+
+@font-face{
+    font-family: font;
+    src: url(./font/Champagne\ &\ Limousines.ttf);
+}
+
+@keyframes flash{
+    from{
+        text-shadow: none;
+    }
+
+    50%{
+        text-shadow: #007e8a 0px 0px 5px, #007e8a 0px 0px 10px, #007e8a 0px 0px 15px, #007e8a 0px 0px 20px, #007e8a 0px 0px 30px, #007e8a 0px 0px 40px, #FF2D95 0px 0px 50px, #007e8a 0px 0px 75px;
+    }
+
+    to{
+        text-shadow: none;
+    }
+}
+
+
+/************************************** Debut navbar ***********************************/
+
+.campus{
+    animation: flash infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    font-size: 50px;
+    position: relative;
+    transform: rotate(-6deg);
+    bottom: 8px;
+    left: 5px;
+    color: #60aeb6;
+}
+
+.sacre{
+    font-size: 50px;
+    position: relative;
+    top: 5px;
+    color: #f0f3f4;
+    text-shadow: 4px 4px 2px rgba(146, 150, 150, 1);
+}
+
+.navbar{
+    background-color: #ffeae4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-link a{
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo{
+    text-align: center;
+}
+
+.reims{
+    height: 600px;
+}
+
+/************************************** Fin navbar ***********************************/
+
+.intro{
+    display: flex;
+    border-bottom-style: solid;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.text h2{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.text p{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+/************************************** Debut Title ***********************************/
+
+.intro .text h2 {
+    font-family: 'impact';
+    font-size: 50px ;
+    font-weight: bold;
+    
+
+}
+
+.intro .text p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px ;
+    text-align: justify;
+}
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+}
+
+.container-manger h1, .container-divertir h1, .container-informer h1, .container-utiles h1{
+    font-size: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+}
+
+.container-manger h2, .container-divertir h2, .container-informer h2, .container-utiles h2{
+    font-size: 30px;
+}
+
+.container-manger, .container-divertir, .container-utiles, .container-informer{
+    background-color: #ffeae4;
+}
+
+/************************************** Fin Title ***********************************/
+
+/**************************************** Debut Card ***********************************/
+
+
+.container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking, .container-petite-halle{
+    display: flex;
+    justify-content: space-around;
+    padding-top:20px;
+    padding-bottom: 60px;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5);
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
+    transition: .3s ease-in-out;
+    max-width: 80%;
+    align-self: center;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+button{
+    width: 100%;
+    background-color: #007e8a;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/************************************ Fin Card *******************************/
+
+/************************* Debut popup pour plus d'information *********************/
+
+
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.74s ease-in-out;
+}
+
+.popup-inner{
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    max-width: 800px;
+    max-height: 599px;
+    width: 59%;
+    height: 80%;
+    background-color: #007e8a;
+    transform: rotate(32deg);
+    transition: 0.74s ease-in-out;
+}
+
+
+.popup-text{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.popup-text a { 
+    color :#0000FF ;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.popup-text h1{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.popup-text a{
+    margin-bottom: 2rem;
+    text-transform:uppercase;
+    font-size: 25px;
+}
+
+.popup-text p{
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.popup-text input{
+    width: 80%;
+}
+
+.popup-text label{
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.popup-text form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.popup-text button{
+    width: auto;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 9px 18px 0px rgba(0,0,0,0.75);
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup:target .popup-inner{
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+
+.popup-close{
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  font-size: 400;
+  border-radius: 100%;
+  background-color: #0a0a0a;
+  z-index: 4;
+  color: white;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/************************************ Fin popup pour plus d'information ***************************/
+
+/************************************ Debut footer ***************************/
+
+footer{
+    background-color: #007e8a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.description a{
+    text-decoration: none;
+    color: white;
+    display:inline;
+    font-weight:bolder;
+    
+    
+}
+.site {
+    color: white;
+    
+
+}
+
+/************************************ Fin footer ***************************/
+
+.back-to-top{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 10px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 40px;
+    border-radius: 5px;
+}
+                       
+
+
+@media screen and (max-width: 640px){
+
+    .container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 15px;
+    }
+
+    .back-to-top{
+        display: none;
+    }
+
+    .popup-text h1{
+        font-size: 30px;
+    }
+
+    .popup-text a{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    
+    .nav-link a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    .nav-link{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text h2{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    button{
+        display: flex;
+        justify-content: center;
+    }
+}

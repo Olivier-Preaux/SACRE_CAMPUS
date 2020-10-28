@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+
+    <!---------------------------------------------- Navbar ------------------------------>
+    <nav class="navbar">
+        <div class="logo">
+            <h3 class="sacre">SACRÉ</h3>
+            <h3 class="campus">CAMPUS</h3>
+        </div>
+        <ul class="nav-link">
+            <li><a href="#manger">Se Restaurer</a></li>
+            <li><a href="#divertir">Se Divertir</a></li>
+            <li><a href="#informer">se rencontrer</a></li>
+            <li><a href="#utiles">Lieux Utiles</a></li>
+            <li><a href="#formulaire">Inscrire mon établissement</a></li>
+        </ul>
+    </nav>
+
+    <div class="popup" id="formulaire">
+        <div class="popup-inner">
+            <a class="popup-close" href="#">X</a>
+            <div class="popup-text">
+                <h1>Ajouter votre établissement</h1>
+                <form action="https://formspree.io/f/mzbkdjyz" method="POST">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" required="">
+                    <label for="nom">Nom de l'établissement :</label>
+                    <input id="nom" type="text" name="nom" required="">
+                    <label for="adresse">Adresse de l'établissement :</label>
+                    <input id="adresse" type="text" name="adresse" required="">
+                    <button type="submit">Soumettre</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="text">
+            <h2>LES BONNES ADRESSES <br> SUR REIMS</h2>
+            <p>Découvrez toutes les adresses utiles à proximite de Quartier Libre, le Quartier Général des Wilders.</p>
+            <p>Toutes les astuces pour manger, sur le pouce ou non , et trouver des endroits pour boire un verre et se divertir.</p>
+            <p>Et enfin, des endroits utiles pour étendre vos connaissances et votre réseau professionnel.</p>
+        </div>
+        <img src="./picture/Reims2.png" alt="" class="reims">
+    </div>
+    <!---------------------------------------------- Debut container manger ------------------------------>
+
+    <div class="container-manger" id="manger">
+        <h1>Se restaurer</h1>
+        <div class="container-card-manger">
+            <!---------------------------------------------- Debut container rapide ------------------------------>
+            <h2>Restauration rapide</h2>
+            <div class="container-rapide">
+                <div class="card test">
+                    <img src="./picture/lefast.jpg" alt="">
+                    <form action="#fast">
+                        <button type="submit">Le Fast<br>Plus d'infos</button>
+                    </form>
+                </div>
+                <div  class="card">
+                    <img src="./picture/subway.jpg" alt="">
+                    <form action="#subway">
+                        <button type="submit">Subway <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/mcdo.jpg" alt="">
+                    <form action="#mcdo">
+                        <button type="submit">McDo <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Debut container boulangerie ------------------------------>
+            <h2>Boulangerie</h2>
+            <div class="container-boulangerie">
+                <div class="card">
+                    <img src="./picture/boulangeriedelagare.jpg" alt="">
+                    <form action="#gare">
+                        <button type="submit">Boulangerie de la Gare <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/waida.jpg" alt="">
+                    <form action="#waida">
+                        <button type="submit">Waida et Fils <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/fischer.jpg" alt="">
+                    <form action="#fischer">
+                        <button type="submit">Fischer <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Debut container restaurant ------------------------------>
+            <h2>Restaurant</h2>
+            <div class="container-restaurant">
+                <div class="card">
+                    <img src="./picture/tablier.jpg" alt="le tablier">
+                    <form action="#tablier">
+                        <button type="submit">Le Tablier <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/sacreburger.jpg" alt="sacre burger">
+                    <form action="#sacre">
+                        <button type="submit">Sacre Burger <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/231east.jpg" alt="231 East">
+                    <form action="#231east">
+                        <button type="submit">231 East <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-restaurant">
+                <div class="card">
+                    <img src="./picture/shinzen.jpg" alt="231 East">
+                    <form action="#shinzen">
+                        <button type="submit">Shin Zen <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/cookhouse.jpg" alt="231 East">
+                    <form action="#cookhouse">
+                        <button type="submit">CookHouse<br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/koboon.jpg" alt="231 East">
+                    <form action="#koboon">
+                        <button type="submit">Koboon <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-restaurant">
+                <div class="card">
+                    <img src="./picture/edito.jpg" alt="Edito">
+                    <form action="#edito">
+                        <button type="submit">L'Edito <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Fin container restaurant ------------------------------>
+        </div>
+    </div>
+
+    <!---------------------------------------------- Fin container manger ------------------------------>
+
+    <!---------------------------------------------- Debut container divertir ------------------------------>
+
+    <div class="container-divertir" id="divertir">
+        <h1>Se divertir</h1>
+        <div class="container-card-divertir">
+            <!---------------------------------------------- Debut container bar ------------------------------>
+            <h2>Bars</h2>
+            <div class="container-bar">
+                <div class="card">
+                    <img src="./picture/229.jpg" alt="">
+                    <form action="#229bar">
+                        <button type="submit">Le 229 Bar Gaming <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/kilberry.jpg" alt="">
+                    <form action="#kilberry">
+                        <button type="submit"> Le Kilberry<br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/triangle.jpg" alt="">
+                    <form action="#triangle">
+                        <button type="submit">Triangle Sweet Corner<br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-bar">
+                <div class="card">
+                    <img src="./picture/futamesure.jpg" alt="">
+                    <form action="#fut">
+                        <button type="submit">Au Fut et a mesure <br>Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/antirouille.jpg" alt="">
+                    <form action="#antirouille">
+                        <button type="submit">L'antirouille <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/torboyo.jpg" alt="">
+                    <form action="#torboyo">
+                        <button type="submit">Torboyo <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-bar">
+                <div class="card">
+                    <img src="./picture/market.jpg" alt="">
+                    <form action="#market">
+                        <button type="submit">The Market Brewhouse <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/delirium.jpg" alt="">
+                    <form action="#delirium">
+                        <button type="submit">Delirium café <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/musikall.jpg" alt="">
+                    <form action="#musikall">
+                        <button type="submit">Musikall Bar Karaoké Box <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-bar">
+                <div class="card">
+                    <img src="./picture/Mrfogg's.jpg" alt="">
+                    <form action="#mrfoggs">
+                        <button type="submit">Mr Fogg's <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Debut container cinema ------------------------------>
+            <h2>Spectacles</h2>
+            <div class="container-cinema">
+                <div class="card">
+                    <img src="./picture/cinema.jpg" alt="">
+                    <form action="#gaumont">
+                        <button type="submit">Opéraims <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/opera.jpg" alt="">
+                    <form action="#opera">
+                        <button type="submit">Opera <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Debut container salledesport ------------------------------>
+            <h2>Salle de sport</h2>
+            <div class="container-salledesport">
+                <div class="card">
+                    <img src="./picture/espace-club.jpg" alt="">
+                    <form action="#espaceclub">
+                        <button type="submit">Espace Club <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/gts-reims.png" alt="">
+                    <form action="#gts">
+                        <button type="submit">GTS Reims <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------- Fin container divertir ------------------------------>
+
+    <!---------------------------------------------- Debut container informer ------------------------------>
+
+    <div class="container-informer" id="informer">
+        <h1>se rencontrer</h1>
+        <div class="container-card-informer">
+            <!---------------------------------------------- Debut container meetup ------------------------------>
+            <h2>Meetup</h2>
+            <div class="container-meetup">
+                <div class="card">
+                    <img src="./picture/afup.png" alt="">
+                    <form action="#afup">
+                        <button type="submit">AFUP Reims <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/Sacrétech.png" alt="">
+                    <form action="#sacreetech">
+                        <button type="submit">Sacree Tech <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./picture/saintex.png" alt="">
+                    </div>
+                    <form action="#saintex">
+                        <button type="submit">Saint-Ex <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            
+            <
+        </div>
+    </div>
+
+    <!---------------------------------------------- Debut container informer ------------------------------>
+
+    <!---------------------------------------------- Debut container utiles ------------------------------>
+
+    <div class="container-utiles" id="utiles">
+        <h1>Lieux utiles</h1>
+        <div class="container-card-utiles">
+            <!---------------------------------------------- Debut container informer ------------------------------>
+            <h2>Quartier-Libre</h2>
+            <div class="container-petite-halle">
+                <div class="card">
+                    <img src="./picture/petite-halle.jpg" alt="">
+                    <form action="#petitehalle">
+                        <button type="submit">Petite-Halle <br> Plus d'infos</button>
+                    </form>
+                </div>
+            
+                <div class="card">
+                    <img src="./picture/quartierlibre.png" alt="">
+                    <form action="#quartier">
+                        <button type="submit">Quartier Libre <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/wild.png" alt="">
+                    <form action="#wild">
+                        <button type="submit">Wild Code School <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <h2>Parking Gratuit</h2>
+            <div class="container-parking">
+                <div class="card">
+                    <img src="./picture/parking.jpg" alt="">
+                    <form action="#parkingV">
+                        <button type="submit">Parking rue Vernouillet <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/parking.jpg" alt="">
+                    <form action="#parkingC">
+                        <button type="submit">Parking rue du Colonel Fabien <br>Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+            <!---------------------------------------------- Debut container pharmacie ------------------------------>
+            <h2>Pharmacie</h2>
+            <div class="container-pharmacie">
+                <div class="card">
+                    <img src="./picture/pharmacie_godfroy.jpg" alt="">
+                    <form action="#pharmacie">
+                        <button type="submit">Pharmacie Godfroy <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------- Debut container Popup ------------------------------>
+
+    <div class="popup" id="fast">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Le Fast</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?rlz=1C1CHBF_frFR913FR914&tbm=lcl&sxsrf=ALeKk01HPpSLPBiZwjhgAVdYbleaZFrCZw%3A1602151035653&ei=e-J-X6G2J4-cjLsPoYaDgA0&q=le+fast+reims&oq=le+fast+reims&gs_l=psy-ab.3..0l3j0i7i30k1j0i8i30k1j0i30k1j38.22801.23757.0.24715.7.7.0.0.0.0.121.605.6j1.7.0....0...1c.1.64.psy-ab..0.7.603...0i7i10i30k1j0i13k1j0i8i7i30k1.0.YMt69rUOCRo#rlfi=hd:;si:;mv:[[49.258960577319016,4.021102666598925],[49.25860062268096,4.020551133401074]]" onclick="window.open(this.href);return false">49 Rue De Courcelles, 51100, Reims</a><br>
+                    Numéro :  <a href="tel:+33326020294"> 03 26 02 02 94 </a><br>
+                    <a href="https://www.facebook.com/RestaurantLeFast/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href ="#subway" >Subway</a>
+                    <a href ="#mcdo">McDo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="subway">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Subway</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/search?rlz=1C1CHBF_frFR913FR914&sxsrf=ALeKk00AxNWloOIXNUF8D76fbCpHeea1qw:1602148914197&q=subway+reims&npsic=0&rflfq=1&rlha=0&rllag=49258305,3995234,2282&tbm=lcl&ved=2ahUKEwikraHn1aTsAhUSKBoKHTLZChIQtgN6BAgLEAc&rldoc=1#rlfi=hd:;si:;mv:[[49.26427062194109,4.087416559423831],[49.247520603886684,3.9586705267089872],null,[49.25589632343149,4.023043543066409],14]"onclick="window.open(this.href);return false">63 Place Drouet d'Erlon</a><br>
+                    Numéro : <a href="tel:+33326826443">03 26 82 64 43</a><br>
+                    <a href="https://www.subway.com/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href ="#fast">Le Fast</a>
+                    <a href ="#mcdo">McDo</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="mcdo">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>McDo</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/search?rlz=1C1CHBF_frFR913FR914&tbm=lcl&sxsrf=ALeKk01kC7bI8Cx3gCUaA-PmFe-RC3ZwqA%3A1602148919978&ei=N9p-X_6OO6-QlwTZ66iACQ&q=mcdo+reims&oq=mac+do+&gs_l=psy-ab.1.0.0i67k1l10.144961.146634.0.148750.9.8.0.1.1.0.156.739.4j3.8.0....0...1c.1.64.psy-ab..0.9.937.10..0j35i39k1j46i67k1j35i362i39k1j0i433i131k1j0i433i67k1j0i433k1j0i10i67k1j46i433i131k1j46i433k1j46i433i67k1j0i10k1.196.uo9Dr_XzmN8#rlfi=hd:;si:,49.24765904260256,3.9697433032470553;mv:[[49.26623404191819,4.164938065039068],[49.23272965430263,3.90744599960938],null,[49.24948469027587,4.036192032324224],13]" onclick="window.open(this.href);return false">Rue de Talleyrand 2-4</a><br>
+                    Numéro : <a href="tel:+33326889494">03 26 88 94 94</a><br>
+                    <a href="https://www.mcdonalds.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href ="#fast">Le Fast</a>
+                    <a href ="#subway">Subway</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gare">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Boulangerie de la Gare</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/boulangerie+de+la+gare/@49.258465,4.0206007,15z/data=!4m2!3m1!1s0x0:0xdd9d6845a2e542ab?sa=X&hl=fr&ved=2ahUKEwi7ncuj26TsAhXkz4UKHec3BigQ_BIwCnoECBEQBQ" onclick="window.open(this.href);return false">43 Rue de Courcelles , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33326477549">03 26 47 75 49</a><br>
+                    <a href="https://website--3171208180067204486254-bakery.business.site/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href ="#waida">Waida et Fils</a>
+                    <a href ="#fischer">Fischer</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="waida">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Waida et Fils</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/Wa%C3%AFda+et+Fils/@49.2541839,4.0275078,15z/data=!4m5!3m4!1s0x0:0xf582183cf4fe5088!8m2!3d49.2541839!4d4.0275078?hl=fr" onclick="window.open(this.href);return false">5 place Drouet d'Erlon, 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33326474449">03 26 47 44 49</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href ="#gare">Boulangerie de la Gare</a>
+                    <a href ="#fischer">Fischer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="fischer">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Fischer</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/Fischer/@49.2615158,4.0203068,15z/data=!4m5!3m4!1s0x0:0xcb5995ce626cc9c8!8m2!3d49.2615158!4d4.0203068?hl=fr" onclick="window.open(this.href);return false">9 Rue Gaston Boyer, 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33326233376 ">03 26 23 33 76</a><br>
+                    <a href="https://lu.fischer1913.com/fr" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                <p>En lien avec votre selection</p>
+                <a href="#gare">Boulangerie de la Gare</a>
+                <a href="#waida">Waida et Fils</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="tablier">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Le Tablier</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/Le+Tablier+Reims/@49.2549899,4.0254275,17z/data=!3m1!4b1!4m5!3m4!1s0x47e975a79c330075:0xe8437ae6993da6a5!8m2!3d49.2549899!4d4.0276162?hl=fr" onclick="window.open(this.href);return false">30 place Drouet d'Erlon , 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33353131689">03 53 13 16 89</a><br>
+                    <a href="http://letablier-reims.fr/index.html?fbclid=IwAR3rxO5IE9Mwb6jDLYmC9mttnTfbhSruur-JF3wYBsRkY0BE0dt4tEg39A4" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                <p>En lien avec votre selection</p>
+                <a href="#edito">L'Edito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="sacre">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Sacre Burger</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/Sacr%C3%A9+Burger/@49.2575385,4.0328727,15z/data=!4m5!3m4!1s0x0:0x275d421fd60cf980!8m2!3d49.2575385!4d4.0328727?hl=fr" onclick="window.open(this.href);return false">24 Rue du Tambour , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33984579140">09 84 57 91 40</a><br>
+                    <a href="https://www.sacreburger.fr/fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#231east">231 East</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="231east">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>231 East</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/231+East+Street/@49.2557603,4.026503,15z/data=!4m5!3m4!1s0x0:0xd8869ae6d634d349!8m2!3d49.2557603!4d4.026503?hl=fr" onclick="window.open(this.href);return false">61 Place Drouet d'Erlon , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33326259838">03 26 25 98 38</a><br>
+                    <a href="https://www.231-east.fr/restaurants/25/reims" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#sacre">Sacre Burger</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="shinzen">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Shin Zen</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/Shin'zen/@49.2514129,4.0238687,15z/data=!4m2!3m1!1s0x0:0x5b472e15fc3c6467?sa=X&hl=fr&ved=2ahUKEwiX7sfx2KTsAhUE1RoKHbtNA2UQ_BIwC3oECBAQBQ" onclick="window.open(this.href);return false">1 Place Stalingrad , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33967649541">09 67 64 95 41</a><br>
+                    <a href="http://www.shin-zen-restaurant-japonais-reims.com/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                <p>En lien avec votre selection</p>
+                <a href="#cookhouse">CookHouse</a>
+                <a href="#koboon">Koboon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="cookhouse">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>CookHouse</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/COOK+HOUSE/@49.2563546,4.0260766,15z/data=!4m5!3m4!1s0x0:0x17fac9eaaa34149f!8m2!3d49.2563546!4d4.0260766" onclick="window.open(this.href);return false">79 Place Drouet d'Erlon , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33326356432">03 26 35 64 32</a><br>
+                    <a href="https://www.cookhouse.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#shinzen">Shin Zen</a>
+                    <a href="#koboon">Koboon</a>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="koboon">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Koboon</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Koboon+Street+food+Thai+raffin%C3%A9e/@49.2565016,4.0227633,17z/data=!3m1!4b1!4m5!3m4!1s0x47e975d7b7e247c5:0x1bec48f2f8666919!8m2!3d49.2565016!4d4.024952" onclick="window.open(this.href);return false">9 Boulevard du Général Leclerc REIMS</a><br>
+                    Numéro : <a href="tel:+33988007414">09 88 00 74 14 </a><br>
+                    <a href="https://www.koboon-resto.com/plats-a-empoter-reims-8" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#shinzen">Shin Zen</a>
+                    <a href="#cookhouse">CookHouse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="edito">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>L'Edito</h1>
+                <p>
+                    Adresse: <a href="https://www.google.com/maps/place/%C3%89dito+Reims+-+Brasserie+Reims/@49.256654,4.0266059,15z/data=!4m2!3m1!1s0x0:0xfa2aa26e59a51542?sa=X&ved=2ahUKEwjisueHnKfsAhVUDWMBHZgvCAQQ_BIwCnoECBAQBQ" onclick="window.open(this.href);return false">80 Place Drouet d'Erlon, 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33326403306">03 26 40 33 06 </a><br>
+                    <a href="https://www.restaurant-ledito-reims.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#mrfoggs">Mr Fogg's</a>
+                    <a href="#letablier">Le Tablier</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="229bar">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>229 Bar Gaming</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Le+229+Bar+Gaming/@49.251278,4.0233458,15z/data=!4m5!3m4!1s0x0:0xa294071c9faf1eda!8m2!3d49.251278!4d4.0233458" onclick="window.open(this.href);return false">7 place Stalingrad , 51100 REIMS</a><br>
+                    Numéro : <a href="tel:+33625441948">06 25 44 19 48 </a><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="kilberry">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1> Le Kileberry</h1>
+                <div class="selection">
+                    <p>
+                        Adresse: <a href="https://www.google.fr/maps/place/Kilberry/@49.2515589,4.0230262,15z/data=!4m5!3m4!1s0x0:0x1542ed9c7222eef2!8m2!3d49.2515589!4d4.0230262" onclick="window.open(this.href);return false">182 Rue de Vesle, 51100 Reims</a><br>
+                        Numéro : <a href="tel:+33326884647">03 26 88 46 47</a><br>
+                        <a href="https://www.facebook.com/lekilberry/" onclick="window.open(this.href);return false">Site Web</a><br>
+                    </p>
+                    <p>En lien avec votre selection</p>
+                    <a href="#mrfoggs">Mr Fogg's</a>
+                    <a href="#delirium">Delirium Café</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="triangle">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Triangle Sweet Corner</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Triangle+Sweet+Corner/@49.2598381,4.0308695,15z/data=!4m5!3m4!1s0x0:0x7b392b377397b837!8m2!3d49.2598381!4d4.0308695"onclick="window.open(this.href);return false" >5 Rue du Château Porte Mars, 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33650223494">06 50 22 34 94</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#market">The Market Brewhouse</a>
+                    <a href="#afup">AFUP Reims</a>
+                    <a href="#wild">Wild Code School</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="fut">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Au Fut et a Mesure</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Au+F%C3%BBt+et+%C3%A0+mesure/@49.2558486,4.0260662,15z/data=!4m5!3m4!1s0x0:0xa7d2f99070fd702c!8m2!3d49.2558486!4d4.0260662" onclick="window.open(this.href);return false">7 Rue de Chativesle, 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33326078170">0326078170</a><br>
+                    <a href="https://aufutetamesure.fr/bar/aufut-reims/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#antirouille">L'antirouille</a>
+                    <a href="#torboyo">Le Torboyo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="antirouille">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>L'antirouille</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/L'Antirouille/@49.2558258,4.0259831,15z/data=!4m5!3m4!1s0x0:0xf232a547aea98719!8m2!3d49.2558258!4d4.0259831" onclick="window.open(this.href);return false" >9 Rue de Chativesle, 51100 Reims</a><br>
+                    Numéro : Non<br>
+                    <a href="https://www.facebook.com/pages/category/Pub/LAntirouille-Craft-Beer-Bar-223422691592085/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#fut">Au Fut et à mesure</a>
+                    <a href="#torboyo">Le Torboyo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="torboyo">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Torboyo</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Au+Torboyo/@49.2559365,4.0261795,15z/data=!4m2!3m1!1s0x0:0x4d7786e337372543?sa=X&ved=2ahUKEwiQpe3DgqXsAhXT3YUKHUANBc8Q_BIwD3oECA8QBQ" onclick="window.open(this.href);return false" >5 Rue de Chativesle, 51100 Reims</a><br>
+                    Numéro : <a href="tel:+33326847609">0326847609</a><br>
+                    <a href="https://www.facebook.com/Grandcheftorboyo/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#fut">Au fut et à mesure</a>
+                    <a href="#antirouille">L'antirouille</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="market">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>The Market Brewhouse</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/maps?channel=fs&client=ubuntu&q=The+Market+Brewhouse&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj7kICzgqXsAhWOlxQKHZgvAMkQ_AUoAXoECCEQAw" onclick="window.open(this.href);return false">48 Rue de Mars, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326251259"> 03 26 25 12 59 </a><br>
+                    <a href="https://www.themarketbrewhouse.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#triangle">Le Triangle Sweet Corner</a>
+                    <a href="#afup">AFUP Reims</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="delirium">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Delirium Cafe</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?client=ubuntu&channel=fs&biw=1280&bih=913&tbm=lcl&ei=sOp-X8eHO-GRjLsP7eSbsAw&q=delirium&oq=delirium&gs_l=psy-ab.3..0i67k1l2j46i433k1j0l2j0i433k1j46i67k1j0j0i67k1l2.41739.41739.0.41922.1.1.0.0.0.0.110.110.0j1.1.0....0...1c.1.64.psy-ab..0.1.110....0.aLuw_rSuTeA#rlfi=hd:;si:6611850333874195073;mv:[[49.25390557731903,4.027246738357909],[49.25354562268097,4.026695261642091]]" onclick="window.open(this.href);return false">17 Rue de Thillois, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326240484"> 03 26 24 04 84 </a><br>
+                    <a href="https://m.facebook.com/DeliriumCafeReims/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#kilberry">Le Kilberry</a>
+                    <a href="#mrfoggs">Mr Fogg's</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="mrfoggs">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Mr Fogg's</h1>
+                <p>
+                    Adresse : <a href="https://www.google.com/maps?channel=fs&client=ubuntu&q=foggs+reims&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjy0Mr3maXsAhVmx4UKHbR2Co0Q_AUoAXoECB8QAw" onclick="window.open(this.href);return false">17 Rue de Thillois, 51100 Reims</a><br>
+                    Numéro : <a href="+33326401946"> 03 26 40 19 46 </a><br>
+                    <a href="https://www.mrfoggs-reims.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#delirium">Delirium Café</a>
+                    <a href="#kilberry">Le Kileberry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="musikall">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Musikall Bar Karaoke Box</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?client=ubuntu&channel=fs&tbm=lcl&q=Musikhall+Bar+Karaoke+Box&spell=1&sa=X&ved=0ahUKEwii_fqs5aTsAhUJ5uAKHbcRDdAQBQgMKAA&biw=1280&bih=913&dpr=1#rlfi=hd:;si:7383380505941279217;mv:[[49.253783777319036,4.02715023767754],[49.25342382268097,4.026598762322458]]" onclick="window.open(this.href);return false">19 Rue de Thillois, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33352740651"> 03 52 74 06 51 </a><br>
+                    <a href="https://www.musikall.bar/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#gaumont">Opéraims</a>
+                    <a href="#opera">Opéra de Reims</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gaumont">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Opéraims</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?client=ubuntu&hs=8Ir&channel=fs&tbm=lcl&ei=tel-X4uJObCSjLsPx7qx4Aw&q=cinema+reims&oq=cinema+reims&gs_l=psy-ab.3..0l10.6475.7771.0.7910.12.8.0.4.4.0.159.654.4j2.6.0....0...1c.1.64.psy-ab..2.10.671...0i67k1j46i67k1j0i433i67k1j0i433i131k1.0.04YpHzYA0_A#rlfi=hd:;si:6199500702634036240,l,CgxjaW5lbWEgcmVpbXNaFgoGY2luZW1hIgxjaW5lbWEgcmVpbXM,y,M0ywbLc-X08;mv:[[49.2987902,4.1266567],[49.2143747,3.9566059000000005]]" onclick="window.open(this.href);return false">72 Place Drouet d'Erlon, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326782000"> 03 26 78 20 00 </a><br>
+                    <a href="https://www.operaims.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selecion">
+                    <p>En lien avec votre selection</p>
+                    <a href="#opera">Opéra de Reims</a>
+                    <a href="#musikall">Musikall Bar Karaoké Box</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="opera">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Opera</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?client=ubuntu&hs=ZuB&channel=fs&tbm=lcl&ei=wOh-X-3ZLYSCjLsPo5mkqA0&q=opera+reims&oq=opera&gs_l=psy-ab.3.0.0i67k1l3j0j0i433k1l2j0i67k1j0l2j0i67k1.47839.48761.0.50064.5.5.0.0.0.0.112.491.2j3.5.0....0...1c.1.64.psy-ab..0.5.489...0i433i131k1j46i433i131k1j0i433i67k1.0.wUQlPRjhj14#rlfi=hd:;si:;mv:[[49.254131977319034,4.031346439622579],[49.25377202268098,4.0307949603774205]]" onclick="window.open(this.href);return false">1 Rue de Vesle, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326500392"> 03 26 50 03 92 </a><br>
+                    <a href="https://www.operadereims.com/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selecion">
+                    <p>En lien avec votre selection</p>
+                    <a href="#musikall">Musikall Bar Karaoké Box</a>
+                    <a href="#gaumont">Cinéma le Gaumont</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="espaceclub">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Espace Club</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/search?client=ubuntu&hs=vEr&channel=fs&ei=rOh-X4OOHc3jgweR1YXIDA&q=espace%20club%20reims&oq=espace+club+reims&gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BAgAEENQgxRY_BdgmBloAHACeACAAVSIAYoDkgEBNpgBAKABAaoBB2d3cy13aXrIAQjAAQE&sclient=psy-ab&ved=2ahUKEwiC0b7Q46TsAhWJMBQKHXYjBMUQvS4wAXoECAsQGg&uact=5&npsic=0&rflfq=1&rlha=0&rllag=49246667,4044047,2236&tbm=lcl&rldimm=5189095339184940304&lqi=ChFlc3BhY2UgY2x1YiByZWltcyIDiAEBWiAKC2VzcGFjZSBjbHViIhFlc3BhY2UgY2x1YiByZWltcw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&rlst=f#rlfi=hd:;si:;mv:[[49.2612178,4.0704278],[49.2321172,4.017668]]" onclick="window.open(this.href);return false">28 Rue de Courcelles, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326352539"> 03 26 35 25 39 </a><br>
+                    <a href="https://espace-club.com/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#gts">GTS Reims</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gts">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>GTS Reims</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/maps/place/L'Appart+Fitness+Reims+devient+GTS+Reims+(Global+Training+Sport)+:+fitness,+musculation,+cardio+training,+%C3%A9lectrostimulation/@49.2537763,4.024673,15z/data=!4m2!3m1!1s0x0:0xb2535130abed7636?sa=X&ved=2ahUKEwjenOO046TsAhWlBGMBHUxcCNgQ_BIwCnoECBIQBQ" onclick="window.open(this.href);return false">37 Rue Buirette, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326241554"> 03 26 24 15 54 </a><br>
+                    <a href="https://www.facebook.com/gtsreims/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#espaceclub">Espace Club</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="afup">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>AFUP Reims</h1>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#saintex">Saint-Ex</a>
+                    <a href="#sacreetech">Sacrée-Tech</a>
+                    <a href="#wild">Wild-Code-School</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="saintex">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Saint-Ex</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/maps/place/ArtFabrique+Saintex+culture+num%C3%A9rique/@49.2498157,4.0218118,15z/data=!4m2!3m1!1s0x0:0x8c60c530ed88e26?sa=X&ved=2ahUKEwjo4vmD46TsAhUQ-hQKHU3wA8kQ_BIwDXoECA8QBQ" onclick="window.open(this.href);return false">Centre culturel numérique Saint-Exupéry, Chaussée Bocquaine, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33326774141"> 03 26 77 41 41 </a><br>
+                    <a href="http://www.saintex-reims.com/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#sacreetech">Sacrée-Tech</a>
+                    <a href="#wild">Wild-Code-School</a>
+                    <a href="#afup">AFUP Reims</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="sacreetech">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Sacree Tech</h1>
+                <p> 
+                    <a href="https://www.meetup.com/fr-FR/SacreeTech/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#wild">Wild-Code-School</a>
+                    <a href="#afup">AFUP Reims</a>
+                    <a href="#saintex">Saint-Ex</a>
+                    <a href="https://www.meetup.com/fr-FR/JS-Dont-Panic/" onclick="window.open(this.href);return false"> Js Don't Panic</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="parkingV">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Parking Vernouillet</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Rue+Vernouillet,+51100+Reims/@49.2581328,4.0155929,18.25z/data=!4m5!3m4!1s0x47e97503affe21ef:0xdeb11178d66f4ddb!8m2!3d49.2579506!4d4.01643" onclick="window.open(this.href);return false">Rue Vernouillet</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#parkingC">Parking Colonel Fabien</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="parkingC">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Parking Colonel Fabien</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/search/parking+colonel+fabian/@48.8776924,2.3682931,17.5z" onclick="window.open(this.href);return false">3 rue Louis Leblanc , 51100 Reims</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="parkingV">Parking Vernouillet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="petitehalle">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>La Petite-Halle</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/Quartier+Libre+Reims+-+La+Petite+Halle/@49.2581018,4.0155713,17z/data=!3m1!4b1!4m5!3m4!1s0x47e9751b8acb12a3:0xbfd416f31e6876d7!8m2!3d49.2581018!4d4.01776"onclick="window.open(this.href);return false">Rue Vernouillet, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33629339241"> 06 29 33 92 41 </a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#quartier">Quartier-Libre</a>
+                    <a href="#wild">Wild Code School</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="quartier">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Quartier Libre</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/6+Rue+de+Saint-Brice,+51100+Reims/@49.2569415,4.0175328,17z/data=!3m1!4b1!4m5!3m4!1s0x47e97501a1f9a0f5:0xf9ef0cdf67c7926a!8m2!3d49.2569415!4d4.0197215" onclick="window.open(this.href);return false" >6 rue de Saint-Brice , 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+33629339241"> 06 29 33 92 41 </a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#petitehalle">La Petite-Halle</a>
+                    <a href="#wild">Wild Code School</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="pharmacie">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Pharmacie Godfroy</h1>
+                <p> 
+                    Adresse : <a href="https://www.google.com/maps/place/Pharmacie+Godfroy/@49.2619225,4.0179904,15z/data=!4m2!3m1!1s0x0:0x13c9f3f499568fd3?sa=X&ved=2ahUKEwiK34HI4aTsAhVKcBQKHba7Ds4Q_BIwCnoECBEQBQ" onclick="window.open(this.href);return false">137 Rue de Courcelles, 51100 Reims</a><br>
+                    Numéro :  <a href="tel:+3336472640"> 03 26 47 26 40 </a><br>
+                    <a href="https://www.pharmacie-godfroy-reims.fr/" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="wild">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Wild Code School</h1>
+                <p>
+                    Adresse: <a href="https://www.google.fr/maps/place/6+Rue+de+Saint-Brice,+51100+Reims/@49.2569415,4.0175328,17z/data=!3m1!4b1!4m5!3m4!1s0x47e97501a1f9a0f5:0xf9ef0cdf67c7926a!8m2!3d49.2569415!4d4.0197215" onclick="window.open(this.href);return false" >6 rue de Saint-Brice , 51100 Reims</a><br>
+                    Numéro : <br>
+                    <a href="https://www.wildcodeschool.com/fr-FR" onclick="window.open(this.href);return false">Site Web</a><br>
+                </p>
+                <div class="selection">
+                    <p>En lien avec votre selection</p>
+                    <a href="#quartier">Quartier-Libre</a>
+                    <a href="#petitehalle">La Petite-Halle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------------------------- Fin container Popup ------------------------------>
+
+
+    <footer class="description">
+        <h3 class="site">Réalisé par : </h3>
+        <a href="https://www.linkedin.com/in/olivier-preaux-b492b31b8/" onclick="window.open(this.href);return false">Olivier</a>
+        <a href="https://www.linkedin.com/in/adrien-thouvenin/" onclick="window.open(this.href);return false">Adrien</a>
+        <a href="https://www.linkedin.com/in/enzogaudry/" onclick="window.open(this.href);return false">Enzo</a>
+        <a href="https://www.wildcodeschool.com/fr-FR" onclick="window.open(this.href);return false"><img src="./picture/logo.png" alt=""></a>
+    </footer>
+
+
+    <a href="#top" class="back-to-top">^</a>
+
+</body>
+
+</html>
